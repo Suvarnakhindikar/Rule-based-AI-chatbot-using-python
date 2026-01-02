@@ -1,7 +1,21 @@
 # Rule Based AI ChatBot using Python
 
-print("Namaste! Welcome to your Personal ChatBot")
+import datetime
+import time 
 
+# Greeting Message
+name = input("Enter your name:")
+presentHour= datetime.datetime.now().hour
+
+if 5 <= presentHour < 11:
+   print("Good Morning", name)
+elif 11 <= presentHour < 17:
+   print("Good Afternoon", name)   
+elif 17 <= presentHour < 20:
+   print("Good Evening", name)
+
+
+print("Namaste! Welcome to your Personal ChatBot")
 print("You can ask me basic quetions,type 'bye' to exit from the bot ")
 
 # ChatBot Memory Creation [ Dictionary of Responses ]
